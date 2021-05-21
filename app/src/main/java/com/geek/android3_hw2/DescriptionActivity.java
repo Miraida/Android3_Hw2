@@ -14,7 +14,6 @@ public class DescriptionActivity extends AppCompatActivity {
  private String id = "";
  private TextView title,orgTitle,desc;
  private final FilmStorage filmStorage = new FilmStorage();
- boolean isDataDownloaded = false;
  private ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +22,7 @@ public class DescriptionActivity extends AppCompatActivity {
         initViews();
         checkIntent();
         getFilmAndSet();
-        checkDataDownload();
     }
-
-    private void checkDataDownload() {
-
-    }
-
     private void getFilmAndSet() {
        filmStorage.getFilm(id, this::setData);
     }

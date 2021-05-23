@@ -5,7 +5,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitBuilder {
     private static GhibliApi instance;
-    private RetrofitBuilder(){}
+
+    private RetrofitBuilder() {
+    }
+
     public static GhibliApi getInstance() {
         if (instance == null) {
             instance = createRetrofit();

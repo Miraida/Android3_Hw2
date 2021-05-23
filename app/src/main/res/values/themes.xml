@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="title_text_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="subtitle_text_style">
+        <item name="android:textColor">#222222</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>
